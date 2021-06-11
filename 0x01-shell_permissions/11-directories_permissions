@@ -1,2 +1,2 @@
 #!/bin/bash
-chmod 755 $(find /root/alx-system_engineering-devops/0x01-shell_permissions -type d)
+find .. -type d -exec chmod 755 {} +
