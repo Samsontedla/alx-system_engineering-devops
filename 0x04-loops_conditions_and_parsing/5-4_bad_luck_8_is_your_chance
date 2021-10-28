@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-#This script diplays "Best School" 10 times and "Hi" at the 9th iteration
+#This script diplays "Best School" 10 times and "bad luck" at the 4th and "good luck" at the 8th iteration
 i=0
 while [ $i -lt 10 ]
 do
