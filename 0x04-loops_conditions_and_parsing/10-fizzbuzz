@@ -5,10 +5,10 @@ while [ $i -le 100 ]
 do
 	if [ $(( i % 3 ))  == 0 ]
 	then
-		echo "fizz"
+		echo "Fizz"
 	elif [ $(( i % 5 )) == 0 ]
 	then
-		echo "buzz"
+		echo "Buzz"
 	else
 		echo $i
 	fi
