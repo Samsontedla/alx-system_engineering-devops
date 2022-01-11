@@ -12,7 +12,7 @@ exec { 'update packages':
 
 # install nginx
 package { 'nginx':
-  ensure     => 'installed',
+  ensure => 'installed',
 }
 
 # allow HTTP
@@ -29,7 +29,7 @@ exec { 'chmod www folder':
 
 # create index file
 file { '/var/www/html/index.html':
-  content => "Hello World\n",
+  content => "Hello World!\n",
 }
 
 # create index file
