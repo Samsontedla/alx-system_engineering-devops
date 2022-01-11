@@ -1,4 +1,3 @@
-# Puppet for NginX Configuration
 # add stable version of nginx
 exec { 'add nginx stable repo':
   command => 'sudo add-apt-repository ppa:nginx/stable',
