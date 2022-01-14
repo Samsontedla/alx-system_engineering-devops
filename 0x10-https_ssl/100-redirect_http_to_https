@@ -1,5 +1,5 @@
 global
-	log     /dev/log local0
+    	log     /dev/log local0
     	maxconn 2048
     	user    haproxy
     	group   haproxy
@@ -20,8 +20,9 @@ defaults
 
 frontend  samsonairbnb-frontend-http
         bind *:80
+	redirect scheme https code 301 if !{ ssl_fc }
         http-request set-header X-Forwarded-Proto http
-        default_backend samsonairbnb-backend
+	default_backend samsonairbnb-backend
 
 frontend  samsonairbnb-frontend-https
         bind *:443 ssl crt /etc/ssl/www.samsonairbnb.tech/www.samsonairbnb.tech.pem
